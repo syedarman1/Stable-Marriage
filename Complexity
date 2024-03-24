@@ -1,15 +1,1 @@
-Stable Marriage Problem has exponential time complexity,
-likely O(3^N) due to iterative exploration of matchings
 
-the space complexity is linear, O(1), mainly due to the array storing matchings,
-the number of pairs (3 in this case).
-
- Explanation :
- Time complexity appears exponential due to the algorithm's approach to generating
- and checking all possible matchings for stability.
- Specifically, for each man, the algorithm iterates over all potential matches
-
- Space  determined by the storage requirements for the arrays used in the algorithm. The q[3] array stores the current matching being evaluated,
- and the mp[3][3] and wp[3][3] arrays store the static preference matrices for men and women.
- These arrays have fixed sizes that do not scale with the input size; they are determined by the problem's parameters (3 men and 3 women).
- Therefore, the space complexity is considered constant, O(1)
